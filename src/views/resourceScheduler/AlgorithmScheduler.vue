@@ -17,7 +17,7 @@
         </el-option>
       </el-select>
       <el-table :data="taskData" v-loading="tableLoading" style="margin-top: 12px">
-        <el-table-column prop="id" label="任务ID" width="50"></el-table-column>
+        <el-table-column prop="id" label="任务ID" width="80"></el-table-column>
         <el-table-column prop="name" label="任务名称" width="100"></el-table-column>
         <el-table-column prop="description" label="任务描述"></el-table-column>
         <el-table-column prop="attributes_values" label="任务属性">
@@ -123,7 +123,7 @@
     </el-dialog>
     <el-dialog :visible.sync="connectOpen" title="关联的任务">
       <el-table :data="connectTaskData" v-loading="connectTaskLoading" style="margin-top: 12px">
-        <el-table-column prop="id" label="任务ID" width="180"></el-table-column>
+        <el-table-column prop="id" label="任务ID"></el-table-column>
         <el-table-column prop="name" label="任务名称"></el-table-column>
         <el-table-column prop="description" label="任务描述"></el-table-column>
         <el-table-column prop="attributes_values" label="任务属性">
